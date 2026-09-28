@@ -1,0 +1,4076 @@
+/* ============================================================
+   SOUL BITE — FULL CSS
+   ============================================================ */
+
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+        "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+        "Source Han Sans CN", sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    background: #f4ecde;
+}
+
+.canvas-frame {
+    --canvas-scale: 1;
+    position: relative;
+    width: 100%;
+    max-width: 100vw;
+    min-width: 0;
+    overflow: hidden;
+    background: #f4ecde;
+}
+
+.main-container {
+    overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+    box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+    outline: 0;
+}
+
+.main-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1440px;
+    height: 7450px;
+    margin: 0;
+    background: #f4ecde;
+    overflow: hidden;
+    transform: scale(var(--canvas-scale));
+    transform-origin: top left;
+}
+
+@media (max-width: 1024px) {
+    .canvas-frame {
+        width: 100vw;
+    }
+}
+
+/* ============================================================
+   DESKTOP STYLES
+   ============================================================ */
+
+.rectangle {
+    position: relative;
+    width: 1440px;
+    height: 70px !important;
+    margin: 0;
+    background: #191210;
+    z-index: 13;
+    box-shadow: 0 4px 4px 0 #181210;
+}
+
+.rectangle-1 {
+    position: absolute;
+    width: 160px;
+    height: 53px;
+    top: 18px;
+    left: 1240px;
+    background: #d32031;
+    z-index: 15;
+    border-radius: 50px;
+}
+
+.order-now {
+    position: absolute;
+    width: 87px;
+    height: 20px;
+    top: 15px;
+    left: 36px;
+    color: #fff;
+    font-family: Plus Jakarta Sans, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 20px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 53;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.soul-bite-2 {
+    position: absolute;
+    width: 100px;
+    height: 42px;
+    top: 24px;
+    left: 40px;
+    color: #fff;
+    font-family: Anton, var(--default-font-family);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 42px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 21;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home {
+    position: absolute;
+    width: 99px;
+    height: 31px;
+    top: 29px;
+    left: 781px;
+    color: #fff;
+    font-family: Syne, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+    text-align: center;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.how-to-order {
+    position: absolute;
+    width: 112px;
+    height: 19px;
+    top: 35px;
+    left: 1081px;
+    color: #fff;
+    font-family: Syne, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 52;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-chicken {
+    position: absolute;
+    width: 102px;
+    height: 19px;
+    top: 35px;
+    left: 932px;
+    color: #fff;
+    font-family: Syne, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 51;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-row-c {
+    position: relative;
+    width: 1216px;
+    height: 700px;
+    margin: 57px 0 0 136.71px;
+    z-index: 81;
+}
+
+.rectangle-3 {
+    position: absolute;
+    width: 509px;
+    height: 700px;
+    top: 0;
+    left: 656px;
+    background: url(https://static.codia.ai/image/2026-09-27/rP46tco1yq.png) no-repeat center;
+    background-size: cover;
+    z-index: 14;
+    border-radius: 500px 500px 0 0;
+}
+
+.korean-fried-chicken {
+    position: absolute;
+    height: 24px;
+    top: 70px;
+    left: 1px;
+    color: #fff;
+    font-family: Syne, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    z-index: 23;
+    display: flex;
+    align-items: center;
+}
+
+.crispy {
+    position: absolute;
+    height: 188px;
+    top: 94px;
+    left: 1px;
+    color: #fff;
+    font-family: Anton, var(--default-font-family);
+    font-size: 150px;
+    font-weight: 400;
+    line-height: 188px;
+    white-space: nowrap;
+    z-index: 55;
+    display: flex;
+    align-items: center;
+}
+
+.spicy {
+    position: absolute;
+    height: 216px;
+    top: 203px;
+    left: 1px;
+    color: transparent;
+    font-family: Anton, var(--default-font-family);
+    font-size: 150px;
+    font-weight: 400;
+    line-height: 216px;
+    white-space: nowrap;
+    z-index: 80;
+    -webkit-text-stroke: 8px #d32031;
+    display: flex;
+    align-items: center;
+}
+
+.unforgettable {
+    position: absolute;
+    height: 206px;
+    top: 354px;
+    left: 0;
+    color: #fff;
+    font-family: Anton, var(--default-font-family);
+    font-size: 150px;
+    font-weight: 400;
+    line-height: 206px;
+    white-space: nowrap;
+    z-index: 81;
+    display: flex;
+    align-items: center;
+}
+
+.korean-fried-chicken-4 {
+    position: absolute;
+    width: 408px;
+    height: 38px;
+    top: 545px;
+    left: 1px;
+    color: #fff;
+    font-family: Syne, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    letter-spacing: 0.8px;
+    z-index: 39;
+    display: flex;
+    align-items: center;
+}
+
+.rectangle-5 {
+    position: absolute;
+    width: 218px;
+    height: 64px;
+    top: 612px;
+    left: 1px;
+    border: 3px solid #d32031;
+    z-index: 16;
+    border-radius: 50px;
+}
+
+.our-chicken-6 {
+    position: absolute;
+    width: 136px;
+    height: 24px;
+    top: 17px;
+    left: 38px;
+    color: #fff;
+    font-family: Syne, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 54;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-row-a {
+    position: relative;
+    width: 1471.722px;
+    height: 107.318px;
+    margin: 78.544px 0 0 -6px;
+    z-index: 104;
+}
+
+.unforgettable-7 {
+    position: absolute;
+    width: 180.608px;
+    height: 49.49px;
+    top: 0;
+    left: 1291.115px;
+    color: #fff;
+    font-family: Anton, var(--default-font-family);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 42.15px;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: 1.4px;
+    transform: rotate(-2.41deg);
+    z-index: 88;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spicy-8 {
+    position: absolute;
+    width: 65.709px;
+    height: 44.654px;
+    top: 11.664px;
+    left: 1151.831px;
+    color: #fff;
+    font-family: Anton, var(--default-font-family);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 42.15px;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: 1.4px;
+    transform: rotate(-2.41deg);
+    z-index: 86;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.crispy-9 {
+    position: absolute;
+    width: 80.696px;
+    height: 45.285px;
+    top: 19.664px;
+    left: 1004.831px;
+    color: #fff;
+    font-family: Anton, var(--default-font-family);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 42.15px;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: 1.4px;
+    transform: rotate(-2.41deg);
+    z-index: 84;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.korean-fried-chicken-a {
+    position: absolute;
+    width: 262.535px;
+    height: 52.938px;
+    top: 25.987px;
+    left: 661.942px;
+    color: #fff;
+    font-family: Anton, var(--default-font-family);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 42.15px;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: 1.4px;
+    transform: rotate(-2.41deg);
+    z-index: 83;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.star {
+    position: absolute;
+    width: 10.412px;
+    height: 10.412px;
+    top: 29.456px;
+    left: 1245px;
+    background: url(https://static.codia.ai/image/2026-09-27/3bQ94oTNFy.png) no-repeat center;
+    background-size: cover;
+    z-index: 94;
+}
+
+.star-b {
+    position: absolute;
+    width: 10.412px;
+    height: 10.412px;
+    top: 34.456px;
+    left: 1113.71px;
+    background: url(https://static.codia.ai/image/2026-09-27/OsEc7ZsAA4.png) no-repeat center;
+    background-size: cover;
+    z-index: 92;
+}
+
+.star-c {
+    position: absolute;
+    width: 10.412px;
+    height: 10.412px;
+    top: 42.456px;
+    left: 965.71px;
+    background: url(https://static.codia.ai/image/2026-09-27/KGuQTD100f.png) no-repeat center;
+    background-size: cover;
+    z-index: 91;
+}
+
+.star-e {
+    position: absolute;
+    width: 10.412px;
+    height: 10.412px;
+    top: 56.456px;
+    left: 610px;
+    background: url(https://static.codia.ai/image/2026-09-27/PiVdT21pYY.png) no-repeat center;
+    background-size: cover;
+    z-index: 90;
+}
+
+.star-10 {
+    position: absolute;
+    width: 10.412px;
+    height: 10.412px;
+    top: 66.456px;
+    left: 391px;
+    background: url(https://static.codia.ai/image/2026-09-27/6bcd1m0680.png) no-repeat center;
+    background-size: cover;
+    z-index: 104;
+}
+
+.star-11 {
+    position: absolute;
+    width: 10.412px;
+    height: 10.412px;
+    top: 78.456px;
+    left: 134px;
+    background: url(https://static.codia.ai/image/2026-09-27/Hs884pUM68.png) no-repeat center;
+    background-size: cover;
+    z-index: 95;
+}
+
+.star-12 {
+    position: absolute;
+    width: 10.412px;
+    height: 10.412px;
+    top: 86.456px;
+    left: 0;
+    background: url(https://static.codia.ai/image/2026-09-27/03sKoYu0uj.png) no-repeat center;
+    background-size: cover;
+    z-index: 93;
+}
+
+.made-fresh {
+    position: absolute;
+    width: 143.64px;
+    height: 47.934px;
+    top: 41.916px;
+    left: 433.117px;
+    color: #fff;
+    font-family: Anton, var(--default-font-family);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 42.15px;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: 1.4px;
+    transform: rotate(-2.41deg);
+    z-index: 85;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.unforgettable-d {
+    position: absolute;
+    width: 180.608px;
+    height: 49.49px;
+    top: 51px;
+    left: 177.405px;
+    color: #fff;
+    font-family: Anton, var(--default-font-family);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 42.15px;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: 1.4px;
+    transform: rotate(-2.41deg);
+    z-index: 89;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spicy-f {
+    position: absolute;
+    width: 65.709px;
+    height: 44.654px;
+    top: 62.664px;
+    left: 38.122px;
+    color: #fff;
+    font-family: Anton, var(--default-font-family);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 42.15px;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: 1.4px;
+    transform: rotate(-2.41deg);
+    z-index: 87;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-row-eded {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 220px;
+    height: 24px;
+    margin: 87.138px 0 0 156px;
+    z-index: 96;
+}
+
+.star-13 {
+    flex-shrink: 0;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background: url(https://static.codia.ai/image/2026-09-27/tbEuY1Pym2.png) no-repeat center;
+    background-size: cover;
+    z-index: 96;
+}
+
+.korean-fried-chicken-14 {
+    flex-shrink: 0;
+    position: relative;
+    height: 24px;
+    color: #d32031;
+    font-family: Syne, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    z-index: 30;
+}
+
+.the-chicken {
+    display: block;
+    position: relative;
+    height: 90px;
+    margin: 31px 0 0 155px;
+    color: #181210;
+    font-family: Anton, var(--default-font-family);
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 90px;
+    white-space: nowrap;
+    z-index: 68;
+}
+
+.everyone-cravings {
+    display: block;
+    position: relative;
+    height: 90px;
+    margin: 2px 0 0 155px;
+    color: #d32031;
+    font-family: Anton, var(--default-font-family);
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 90px;
+    white-space: nowrap;
+    z-index: 59;
+}
+
+.flex-row {
+    position: relative;
+    width: 1130px;
+    height: 676px;
+    margin: 56px 0 0 155px;
+    z-index: 107;
+}
+
+.rectangle-15 {
+    position: absolute;
+    width: 510px;
+    height: 676px;
+    top: 0;
+    left: 0;
+    background: url(https://static.codia.ai/image/2026-09-27/2xp80iXcS6.png) no-repeat center;
+    background-size: cover;
+    z-index: 105;
+    border-radius: 50px;
+}
+
+.korean-fried-chicken-16 {
+    position: absolute;
+    width: 415px;
+    height: 69px;
+    top: 65px;
+    left: 620px;
+    color: rgba(24, 18, 16, 0.85);
+    font-family: Plus Jakarta Sans, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.68px;
+    letter-spacing: 0.9px;
+    z-index: 40;
+    display: flex;
+    align-items: center;
+}
+
+.line {
+    position: absolute;
+    width: 510px;
+    height: 1px;
+    top: 163.5px;
+    left: 619.999px;
+    background: url(https://static.codia.ai/image/2026-09-27/6PK1EXnhj1.png) no-repeat center;
+    background-size: cover;
+    z-index: 107;
+}
+
+.fried-to-order {
+    position: absolute;
+    height: 17px;
+    top: 193px;
+    left: 650px;
+    color: #181210;
+    font-family: Syne, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.8px;
+    white-space: nowrap;
+    letter-spacing: 0.7px;
+    z-index: 24;
+    display: flex;
+    align-items: center;
+}
+
+.star-17 {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 194px;
+    left: 620px;
+    background: url(https://static.codia.ai/image/2026-09-27/T1bJ5UHAQj.png) no-repeat center;
+    background-size: cover;
+    z-index: 101;
+}
+
+.star-18 {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 250px;
+    left: 620px;
+    background: url(https://static.codia.ai/image/2026-09-27/hL1sL0bDoc.png) no-repeat center;
+    background-size: cover;
+    z-index: 103;
+}
+
+.served-hot {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 223px;
+    left: 620px;
+    background: url(https://static.codia.ai/image/2026-09-27/RwCj0najub.png) no-repeat center;
+    background-size: cover;
+    z-index: 102;
+}
+
+.signature-glaze {
+    position: absolute;
+    height: 17px;
+    top: 220px;
+    left: 650px;
+    color: #181210;
+    font-family: Syne, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.8px;
+    white-space: nowrap;
+    letter-spacing: 0.7px;
+    z-index: 28;
+    display: flex;
+    align-items: center;
+}
+
+.text-19 {
+    position: absolute;
+    height: 17px;
+    top: 247px;
+    left: 650px;
+    color: #181210;
+    font-family: Syne, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.8px;
+    white-space: nowrap;
+    letter-spacing: 0.7px;
+    z-index: 29;
+    display: flex;
+    align-items: center;
+}
+
+.rectangle-19 {
+    position: absolute;
+    width: 510px;
+    height: 322px;
+    top: 313px;
+    left: 620px;
+    background: url(https://static.codia.ai/image/2026-09-27/i0uvPeLdYh.png) no-repeat center;
+    background-size: cover;
+    z-index: 106;
+    border-radius: 50px;
+}
+
+.flex-row-aefa {
+    position: relative;
+    width: 1198px;
+    height: 609px;
+    margin: 172px 0 0 155px;
+    z-index: 117;
+}
+
+.rectangle-1a {
+    position: absolute;
+    width: 555px;
+    height: 609px;
+    top: 0;
+    left: 0;
+    background: url(https://static.codia.ai/image/2026-09-27/Njdu25YgpW.png) no-repeat center;
+    background-size: cover;
+    z-index: 117;
+    border-radius: 50px;
+}
+
+.signature {
+    position: absolute;
+    height: 24px;
+    top: 55px;
+    left: 654px;
+    color: #fff;
+    font-family: Syne, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    z-index: 38;
+    display: flex;
+    align-items: center;
+}
+
+.star-1b {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 64px;
+    left: 633px;
+    background: url(https://static.codia.ai/image/2026-09-27/SxUSLPJJ9W.png) no-repeat center;
+    background-size: cover;
+    z-index: 100;
+}
+
+.k-chicken {
+    position: absolute;
+    height: 90px;
+    top: 114px;
+    left: 633px;
+    color: #fff;
+    font-family: Anton, var(--default-font-family);
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 90px;
+    white-space: nowrap;
+    z-index: 56;
+    display: flex;
+    align-items: center;
+}
+
+.rice-ball {
+    position: absolute;
+    height: 90px;
+    top: 213px;
+    left: 633px;
+    color: #fff;
+    font-family: Anton, var(--default-font-family);
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 90px;
+    white-space: nowrap;
+    z-index: 57;
+    display: flex;
+    align-items: center;
+}
+
+.freshly-made {
+    position: absolute;
+    width: 373px;
+    height: 46px;
+    top: 334px;
+    left: 638px;
+    color: #fff;
+    font-family: Plus Jakarta Sans, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.68px;
+    letter-spacing: 0.9px;
+    z-index: 41;
+    display: flex;
+    align-items: center;
+}
+
+.rectangle-1c {
+    position: absolute;
+    width: 149px;
+    height: 39px;
+    top: 402px;
+    left: 633px;
+    border: 1px solid #f4ecde;
+    z-index: 17;
+    border-radius: 50px;
+}
+
+.rectangle-1e {
+    position: absolute;
+    width: 174px;
+    height: 39px;
+    top: 402px;
+    left: 801px;
+    border: 1px solid #f4ecde;
+    z-index: 18;
+    border-radius: 50px;
+}
+
+.rectangle-20 {
+    position: absolute;
+    width: 158px;
+    height: 39px;
+    top: 402px;
+    left: 994px;
+    border: 1px solid #f4ecde;
+    z-index: 19;
+    border-radius: 50px;
+}
+
+.freshly-made-1d {
+    position: absolute;
+    height: 18px;
+    top: 10px;
+    left: 32px;
+    color: #fff;
+    font-family: Anton, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    white-space: nowrap;
+    letter-spacing: 2.4px;
+    z-index: 25;
+    display: flex;
+    align-items: center;
+}
+
+.crispy-every-time {
+    position: absolute;
+    height: 18px;
+    top: 10px;
+    left: 32px;
+    color: #fff;
+    font-family: Anton, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    white-space: nowrap;
+    letter-spacing: 2.4px;
+    z-index: 26;
+    display: flex;
+    align-items: center;
+}
+
+.made-to-order {
+    position: absolute;
+    height: 18px;
+    top: 10px;
+    left: 35px;
+    color: #fff;
+    font-family: Anton, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    white-space: nowrap;
+    letter-spacing: 2.4px;
+    z-index: 27;
+    display: flex;
+    align-items: center;
+}
+
+.ellipse {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 16px;
+    left: 18px;
+    background: url(https://static.codia.ai/image/2026-09-27/XKudo5OC83.png) no-repeat center;
+    background-size: cover;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.ellipse-1f {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 16px;
+    left: 18px;
+    background: url(https://static.codia.ai/image/2026-09-27/QK0YhjNWJZ.png) no-repeat center;
+    background-size: cover;
+    z-index: 11;
+    border-radius: 50%;
+}
+
+.ellipse-21 {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 16px;
+    left: 21px;
+    background: url(https://static.codia.ai/image/2026-09-27/5dix0HxrwS.png) no-repeat center;
+    background-size: cover;
+    z-index: 12;
+    border-radius: 50%;
+}
+
+.rp {
+    position: absolute;
+    height: 90px;
+    top: 464px;
+    left: 633px;
+    color: #fff;
+    font-family: Anton, var(--default-font-family);
+    font-size: 75px;
+    font-weight: 400;
+    line-height: 90px;
+    white-space: nowrap;
+    z-index: 58;
+    display: flex;
+    align-items: center;
+}
+
+.flex-row-b {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 155px;
+    height: 24px;
+    margin: 203px 0 0 156px;
+    z-index: 97;
+}
+
+.star-22 {
+    flex-shrink: 0;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background: url(https://static.codia.ai/image/2026-09-27/ep1ZXLsfdO.png) no-repeat center;
+    background-size: cover;
+    z-index: 97;
+}
+
+.flavor {
+    flex-shrink: 0;
+    position: relative;
+    height: 24px;
+    color: #d32031;
+    font-family: Syne, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    z-index: 31;
+}
+
+.whats-make {
+    display: block;
+    position: relative;
+    height: 90px;
+    margin: 31px 0 0 155px;
+    color: #181210;
+    font-family: Anton, var(--default-font-family);
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 90px;
+    white-space: nowrap;
+    z-index: 69;
+}
+
+.flex-row-c-23 {
+    position: relative;
+    width: 1128px;
+    height: 90px;
+    margin: 2px 0 0 155px;
+    z-index: 60;
+}
+
+.it-special {
+    position: absolute;
+    width: 411px;
+    height: 90px;
+    top: 0;
+    left: 0;
+    font-family: Anton, var(--default-font-family);
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 90px;
+    white-space: nowrap;
+    z-index: 60;
+}
+
+.it {
+    position: relative;
+    color: #181210;
+    font-family: Anton, var(--default-font-family);
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 90px;
+}
+
+.special {
+    position: relative;
+    color: #d32031;
+    font-family: Anton, var(--default-font-family);
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 90px;
+}
+
+.four-things {
+    position: absolute;
+    width: 301px;
+    height: 40px;
+    top: 46px;
+    left: 827px;
+    color: rgba(24, 18, 16, 0.8);
+    font-family: Plus Jakarta Sans, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.16px;
+    letter-spacing: 0.8px;
+    z-index: 42;
+    display: flex;
+    align-items: center;
+}
+
+.line-24 {
+    position: relative;
+    width: 1130.004px;
+    height: 1px;
+    margin: 63.017px 0 0 155.498px;
+    background: url(https://static.codia.ai/image/2026-09-27/68ib6OWfVx.png) no-repeat center;
+    background-size: cover;
+    z-index: 108;
+}
+
+.flex-row-e {
+    position: relative;
+    width: 1024px;
+    height: 90px;
+    margin: 30.983px 0 0 159px;
+    z-index: 76;
+}
+
+.crispy-25 {
+    position: absolute;
+    height: 90px;
+    top: 0;
+    left: 91px;
+    color: #181210;
+    font-family: Anton, var(--default-font-family);
+    font-size: 85px;
+    font-weight: 400;
+    line-height: 90px;
+    white-space: nowrap;
+    z-index: 76;
+    display: flex;
+    align-items: center;
+}
+
+.korean-fried-chicken-26 {
+    position: absolute;
+    height: 24px;
+    top: 33px;
+    left: 0;
+    color: rgba(24, 18, 16, 0.7);
+    font-family: Syne, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    z-index: 34;
+    display: flex;
+    align-items: center;
+}
+
+.korean-fried-chicken-27 {
+    position: absolute;
+    height: 20px;
+    top: 35px;
+    left: 686px;
+    color: rgba(24, 18, 16, 0.8);
+    font-family: Plus Jakarta Sans, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    white-space: nowrap;
+    letter-spacing: 0.8px;
+    z-index: 43;
+    display: flex;
+    align-items: center;
+}
+
+.line-28 {
+    position: relative;
+    width: 1130.004px;
+    height: 1px;
+    margin: 30.5px 0 0 154.5px;
+    background: url(https://static.codia.ai/image/2026-09-27/hOu3S8pOhM.png) no-repeat center;
+    background-size: cover;
+    z-index: 109;
+}
+
+.flex-row-29 {
+    position: relative;
+    width: 1029px;
+    height: 90px;
+    margin: 30.5px 0 0 159px;
+    z-index: 78;
+}
+
+.spicy-2a {
+    position: absolute;
+    height: 90px;
+    top: 0;
+    left: 92px;
+    color: #181210;
+    font-family: Anton, var(--default-font-family);
+    font-size: 85px;
+    font-weight: 400;
+    line-height: 90px;
+    white-space: nowrap;
+    z-index: 78;
+    display: flex;
+    align-items: center;
+}
+
+.korean-fried-chicken-2b {
+    position: absolute;
+    height: 24px;
+    top: 33px;
+    left: 0;
+    color: rgba(24, 18, 16, 0.7);
+    font-family: Syne, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    z-index: 36;
+    display: flex;
+    align-items: center;
+}
+
+.korean-fried-chicken-2c {
+    position: absolute;
+    height: 20px;
+    top: 35px;
+    left: 686px;
+    color: rgba(24, 18, 16, 0.8);
+    font-family: Plus Jakarta Sans, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    white-space: nowrap;
+    letter-spacing: 0.8px;
+    z-index: 45;
+    display: flex;
+    align-items: center;
+}
+
+.line-2d {
+    position: relative;
+    width: 1130.004px;
+    height: 1px;
+    margin: 30.5px 0 0 153.5px;
+    background: url(https://static.codia.ai/image/2026-09-27/fh3sFd5Ycp.png) no-repeat center;
+    background-size: cover;
+    z-index: 111;
+}
+
+.flex-row-f {
+    position: relative;
+    width: 1024px;
+    height: 90px;
+    margin: 30.5px 0 0 160px;
+    z-index: 77;
+}
+
+.glossy {
+    position: absolute;
+    height: 90px;
+    top: 0;
+    left: 91px;
+    color: #181210;
+    font-family: Anton, var(--default-font-family);
+    font-size: 85px;
+    font-weight: 400;
+    line-height: 90px;
+    white-space: nowrap;
+    z-index: 77;
+    display: flex;
+    align-items: center;
+}
+
+.korean-fried-chicken-2e {
+    position: absolute;
+    height: 24px;
+    top: 33px;
+    left: 0;
+    color: rgba(24, 18, 16, 0.7);
+    font-family: Syne, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    z-index: 35;
+    display: flex;
+    align-items: center;
+}
+
+.korean-fried-chicken-2f {
+    position: absolute;
+    height: 20px;
+    top: 35px;
+    left: 686px;
+    color: rgba(24, 18, 16, 0.8);
+    font-family: Plus Jakarta Sans, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    white-space: nowrap;
+    letter-spacing: 0.8px;
+    z-index: 44;
+    display: flex;
+    align-items: center;
+}
+
+.line-30 {
+    position: relative;
+    width: 1130.004px;
+    height: 1px;
+    margin: 30.5px 0 0 155.5px;
+    background: url(https://static.codia.ai/image/2026-09-27/Y8KaW478hZ.png) no-repeat center;
+    background-size: cover;
+    z-index: 110;
+}
+
+.flex-row-31 {
+    position: relative;
+    width: 1001px;
+    height: 90px;
+    margin: 30.5px 0 0 160px;
+    z-index: 79;
+}
+
+.juicy {
+    position: absolute;
+    height: 90px;
+    top: 0;
+    left: 91px;
+    color: #181210;
+    font-family: Anton, var(--default-font-family);
+    font-size: 85px;
+    font-weight: 400;
+    line-height: 90px;
+    white-space: nowrap;
+    z-index: 79;
+    display: flex;
+    align-items: center;
+}
+
+.korean-fried-chicken-32 {
+    position: absolute;
+    height: 24px;
+    top: 33px;
+    left: 0;
+    color: rgba(24, 18, 16, 0.7);
+    font-family: Syne, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    z-index: 37;
+    display: flex;
+    align-items: center;
+}
+
+.korean-fried-chicken-33 {
+    position: absolute;
+    height: 20px;
+    top: 35px;
+    left: 686px;
+    color: rgba(24, 18, 16, 0.8);
+    font-family: Plus Jakarta Sans, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    white-space: nowrap;
+    letter-spacing: 0.8px;
+    z-index: 46;
+    display: flex;
+    align-items: center;
+}
+
+.line-34 {
+    position: relative;
+    width: 1130.004px;
+    height: 1px;
+    margin: 30.5px 0 0 154.5px;
+    background: url(https://static.codia.ai/image/2026-09-27/EMhPz58oFB.png) no-repeat center;
+    background-size: cover;
+    z-index: 112;
+}
+
+.flex-row-b-35 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 277px;
+    height: 24px;
+    margin: 199.5px 0 0 155px;
+    z-index: 98;
+}
+
+.star-36 {
+    flex-shrink: 0;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background: url(https://static.codia.ai/image/2026-09-27/ZvneFCoEct.png) no-repeat center;
+    background-size: cover;
+    z-index: 98;
+}
+
+.korean-fried-chicken-37 {
+    flex-shrink: 0;
+    position: relative;
+    height: 24px;
+    color: #fff;
+    font-family: Syne, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    z-index: 32;
+}
+
+.from-raw {
+    display: block;
+    position: relative;
+    height: 90px;
+    margin: 31px 0 0 154px;
+    color: #fff;
+    font-family: Anton, var(--default-font-family);
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 90px;
+    white-space: nowrap;
+    z-index: 70;
+}
+
+.to-crispy {
+    position: relative;
+    width: 353px;
+    height: 90px;
+    margin: 2px 0 0 154px;
+    font-family: Anton, var(--default-font-family);
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 90px;
+    white-space: nowrap;
+    z-index: 61;
+}
+
+.to {
+    position: relative;
+    color: #fff;
+    font-family: Anton, var(--default-font-family);
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 90px;
+}
+
+.crispy-38 {
+    position: relative;
+    color: #d32031;
+    font-family: Anton, var(--default-font-family);
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 90px;
+}
+
+.flex-row-bbc {
+    position: relative;
+    width: 1129px;
+    height: 15px;
+    margin: 58px 0 0 154px;
+    z-index: 116;
+}
+
+.ellipse-39,
+.ellipse-3a,
+.ellipse-3b,
+.ellipse-3c {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ellipse-39 {
+    left: 0;
+    background-image: url(https://static.codia.ai/image/2026-09-27/EdHSJbphmk.png);
+    z-index: 6;
+}
+
+.ellipse-3a {
+    left: 308px;
+    background-image: url(https://static.codia.ai/image/2026-09-27/8AaEsCRhwc.png);
+    z-index: 7;
+}
+
+.ellipse-3b {
+    left: 599px;
+    background-image: url(https://static.codia.ai/image/2026-09-27/nO6KEQ0rVf.png);
+    z-index: 8;
+}
+
+.ellipse-3c {
+    left: 890px;
+    background-image: url(https://static.codia.ai/image/2026-09-27/rmHebutAH7.png);
+    z-index: 9;
+}
+
+.line-3d,
+.line-3e,
+.line-3f,
+.line-40 {
+    position: absolute;
+    height: 1px;
+    top: 7.5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.line-3d {
+    width: 294px;
+    left: 14.5px;
+    background-image: url(https://static.codia.ai/image/2026-09-27/skSNzG1Xj5.png);
+    z-index: 113;
+}
+
+.line-3e {
+    width: 277px;
+    left: 322.5px;
+    background-image: url(https://static.codia.ai/image/2026-09-27/WqciD21vAw.png);
+    z-index: 114;
+}
+
+.line-3f {
+    width: 277px;
+    left: 613.5px;
+    background-image: url(https://static.codia.ai/image/2026-09-27/SFJyY9ouBW.png);
+    z-index: 115;
+}
+
+.line-40 {
+    width: 225px;
+    left: 904.5px;
+    background-image: url(https://static.codia.ai/image/2026-09-27/pqMPmHDGQm.png);
+    z-index: 116;
+}
+
+.flex-row-b-41 {
+    position: relative;
+    width: 923px;
+    height: 90px;
+    margin: -3px 0 0 154px;
+    z-index: 67;
+}
+
+.text-37 {
+    position: absolute;
+    height: 90px;
+    top: 0;
+    left: 292px;
+    color: #d32031;
+    font-family: Anton, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 90px;
+    white-space: nowrap;
+    z-index: 65;
+    display: flex;
+    align-items: center;
+}
+
+.text-38 {
+    position: absolute;
+    height: 90px;
+    top: 0;
+    left: 583px;
+    color: #d32031;
+    font-family: Anton, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 90px;
+    white-space: nowrap;
+    z-index: 66;
+    display: flex;
+    align-items: center;
+}
+
+.section-04 {
+    position: absolute;
+    height: 90px;
+    top: 0;
+    left: 875px;
+    color: #d32031;
+    font-family: Anton, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 90px;
+    white-space: nowrap;
+    z-index: 67;
+    display: flex;
+    align-items: center;
+}
+
+.section-01 {
+    position: absolute;
+    height: 64px;
+    top: 13px;
+    left: 0;
+    color: #d32031;
+    font-family: Anton, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 64px;
+    white-space: nowrap;
+    z-index: 64;
+    display: flex;
+    align-items: center;
+}
+
+.flex-row-ecf {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 1129px;
+    height: 340px;
+    margin: 3px 0 0 154px;
+    z-index: 121;
+}
+
+.rectangle-42,
+.rectangle-43,
+.rectangle-44,
+.rectangle-45 {
+    flex-shrink: 0;
+    position: relative;
+    width: 254px;
+    height: 340px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.rectangle-42 {
+    background-image: url(https://static.codia.ai/image/2026-09-27/MRAk5NRJcY.png);
+    z-index: 118;
+}
+
+.rectangle-43 {
+    background-image: url(https://static.codia.ai/image/2026-09-27/VKpYzoDPhh.png);
+    z-index: 119;
+}
+
+.rectangle-44 {
+    background-image: url(https://static.codia.ai/image/2026-09-27/SLHuRfJoZg.png);
+    z-index: 120;
+}
+
+.rectangle-45 {
+    background-image: url(https://static.codia.ai/image/2026-09-27/fXGNVcA3ag.png);
+    z-index: 121;
+}
+
+/* ============================================================
+   FIX: Rata-kan label process (PREPARE/COAT/FRY/GLAZE) dengan gambar
+   ============================================================ */
+
+.flex-row-e-46 {
+    position: relative;
+    width: 1131px;
+    height: 64px;
+    margin: 13px 0 0 154px;
+    display: block;
+    /* override space-between */
+    z-index: 75;
+}
+
+.flex-row-e-46 .prepare,
+.flex-row-e-46 .coat,
+.flex-row-e-46 .fry,
+.flex-row-e-46 .glaze {
+    position: absolute;
+    top: 0;
+    height: 63px;
+    font-family: Anton, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 63px;
+    color: #ffffff;
+    white-space: nowrap;
+    margin: 0;
+}
+
+/* Posisi disamakan dengan gambar di .flex-row-ecf & deskripsi di .flex-row-fb */
+.flex-row-e-46 .prepare {
+    left: 0;
+}
+
+.flex-row-e-46 .coat {
+    left: 292px;
+}
+
+.flex-row-e-46 .fry {
+    left: 583px;
+}
+
+.flex-row-e-46 .glaze {
+    left: 877px;
+}
+
+
+.flex-row-fb {
+    position: relative;
+    width: 1131px;
+    height: 61px;
+    margin: -6px 0 0 154px;
+    z-index: 50;
+}
+
+.korean-fried-chicken-47,
+.korean-fried-chicken-48,
+.korean-fried-chicken-49,
+.korean-fried-chicken-4a {
+    position: absolute;
+    width: 254px;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Plus Jakarta Sans, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.16px;
+    letter-spacing: 0.8px;
+}
+
+.korean-fried-chicken-47 {
+    height: 40px;
+    top: 0;
+    left: 583px;
+    z-index: 49;
+}
+
+.korean-fried-chicken-48 {
+    height: 40px;
+    top: 1px;
+    left: 0;
+    z-index: 47;
+}
+
+.korean-fried-chicken-49 {
+    height: 40px;
+    top: 1px;
+    left: 292px;
+    z-index: 48;
+}
+
+.korean-fried-chicken-4a {
+    height: 60px;
+    top: 1px;
+    left: 877px;
+    z-index: 50;
+}
+
+.rectangle-4b {
+    position: relative;
+    width: 1440px;
+    height: 725px;
+    margin: 67px 0 0 0;
+    background: #191210a2;
+    z-index: 122;
+    overflow: hidden;
+}
+
+.flex-row-fae {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 201px;
+    height: 24px;
+    margin: 254px 0 0 155px;
+    z-index: 126;
+}
+
+.star-4c {
+    flex-shrink: 0;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background: url(https://static.codia.ai/image/2026-09-27/LerJMi3xQt.png) no-repeat center;
+    background-size: cover;
+    z-index: 126;
+}
+
+.korean-fried-chicken-4d {
+    flex-shrink: 0;
+    position: relative;
+    height: 24px;
+    color: #fff;
+    font-family: Syne, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    z-index: 123;
+}
+
+.made-for {
+    display: block;
+    position: relative;
+    height: 90px;
+    margin: 31px 0 0 154px;
+    color: #fff;
+    font-family: Anton, var(--default-font-family);
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 90px;
+    white-space: nowrap;
+    z-index: 124;
+}
+
+.your-cravings {
+    display: block;
+    position: relative;
+    height: 90px;
+    margin: 3px 0 0 154px;
+    color: #fff;
+    font-family: Anton, var(--default-font-family);
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 90px;
+    white-space: nowrap;
+    z-index: 125;
+}
+
+.korean-fried-chicken-4e {
+    position: relative;
+    width: 483px;
+    height: 40px;
+    margin: 14px 0 0 154px;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: Plus Jakarta Sans, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.16px;
+    letter-spacing: 0.8px;
+    z-index: 127;
+    display: flex;
+    align-items: center;
+}
+
+.line-4f {
+    position: relative;
+    width: 1132px;
+    height: 1px;
+    margin: 45.5px 0 0 153.5px;
+    background: url(https://static.codia.ai/image/2026-09-27/2e6z7wEfmc.png) no-repeat center;
+    background-size: cover;
+    z-index: 131;
+}
+
+.flex-row-cfd {
+    position: relative;
+    width: 617px;
+    height: 35px;
+    margin: 21.5px 0 0 154px;
+    z-index: 137;
+}
+
+.line-50 {
+    position: absolute;
+    width: 1px;
+    height: 36px;
+    top: -0.5px;
+    left: 176.5px;
+    background: url(https://static.codia.ai/image/2026-09-27/gbgtJOadBa.png) no-repeat center;
+    background-size: cover;
+    z-index: 136;
+}
+
+.line-51 {
+    position: absolute;
+    width: 1px;
+    height: 36px;
+    top: -0.5px;
+    left: 368.5px;
+    background: url(https://static.codia.ai/image/2026-09-27/FNVwR5G3Qz.png) no-repeat center;
+    background-size: cover;
+    z-index: 137;
+}
+
+.korean-fried-chicken-52 {
+    position: absolute;
+    height: 21px;
+    top: 7px;
+    left: 0;
+    color: #fff;
+    font-family: Anton, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    white-space: nowrap;
+    letter-spacing: 2.8px;
+    z-index: 133;
+    display: flex;
+    align-items: center;
+}
+
+.korean-fried-chicken-53 {
+    position: absolute;
+    height: 21px;
+    top: 7px;
+    left: 205px;
+    color: #fff;
+    font-family: Anton, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    white-space: nowrap;
+    letter-spacing: 2.8px;
+    z-index: 134;
+    display: flex;
+    align-items: center;
+}
+
+.korean-fried-chicken-54 {
+    position: absolute;
+    height: 21px;
+    top: 7px;
+    left: 407px;
+    color: #fff;
+    font-family: Anton, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    white-space: nowrap;
+    letter-spacing: 2.8px;
+    z-index: 135;
+    display: flex;
+    align-items: center;
+}
+
+.flex-row-55 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 149px;
+    height: 24px;
+    margin: 87px 0 0 155px;
+    z-index: 99;
+}
+
+.star-56 {
+    flex-shrink: 0;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background: url(https://static.codia.ai/image/2026-09-27/y55F577SPH.png) no-repeat center;
+    background-size: cover;
+    z-index: 99;
+}
+
+.korean-fried-chicken-57 {
+    flex-shrink: 0;
+    position: relative;
+    height: 24px;
+    color: #fff;
+    font-family: Syne, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    z-index: 33;
+}
+
+.order {
+    display: block;
+    position: relative;
+    height: 90px;
+    margin: 31px 0 0 154px;
+    color: #fff;
+    font-family: Anton, var(--default-font-family);
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 90px;
+    white-space: nowrap;
+    z-index: 71;
+}
+
+.seoul-bite {
+    display: block;
+    position: relative;
+    height: 90px;
+    margin: 2px 0 0 154px;
+    color: #d32031;
+    font-family: Anton, var(--default-font-family);
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 90px;
+    white-space: nowrap;
+    z-index: 62;
+}
+
+.rectangle-58 {
+    position: relative;
+    width: 1131px;
+    height: 500px;
+    margin: 61px 0 0 154px;
+    background: #f4ecde;
+    z-index: 138;
+    overflow: visible auto;
+    border-radius: 50px;
+}
+
+.flex-row-bf {
+    position: relative;
+    width: 695px;
+    height: 230px;
+    margin: 70px 0 0 96px;
+    z-index: 150;
+}
+
+.rectangle-59 {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    top: 0;
+    left: 0;
+    background: url(https://static.codia.ai/image/2026-09-27/aQW8OWY0cj.png) no-repeat center;
+    background-size: cover;
+    z-index: 139;
+    border-radius: 20px;
+}
+
+.korean-fried-chicken-5a {
+    position: absolute;
+    height: 17px;
+    top: 35px;
+    left: 287px;
+    color: rgba(24, 18, 16, 0.65);
+    font-family: Syne, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.8px;
+    white-space: nowrap;
+    letter-spacing: 2.8px;
+    z-index: 141;
+    display: flex;
+    align-items: center;
+}
+
+.freshly-fried-glaze {
+    position: absolute;
+    height: 62px;
+    top: 54px;
+    left: 286px;
+    color: #181210;
+    font-family: Anton, var(--default-font-family);
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 62px;
+    white-space: nowrap;
+    z-index: 148;
+    display: flex;
+    align-items: center;
+}
+
+.price-per-portion {
+    position: absolute;
+    height: 17px;
+    top: 123px;
+    left: 287px;
+    color: rgba(24, 18, 16, 0.65);
+    font-family: Syne, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.8px;
+    white-space: nowrap;
+    letter-spacing: 2.8px;
+    z-index: 147;
+    display: flex;
+    align-items: center;
+}
+
+.rp-5b {
+    position: absolute;
+    height: 62px;
+    top: 132px;
+    left: 287px;
+    color: #d32031;
+    font-family: Anton, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 62px;
+    white-space: nowrap;
+    z-index: 150;
+    display: flex;
+    align-items: center;
+}
+
+.line-5c {
+    position: relative;
+    width: 941px;
+    height: 1px;
+    margin: 38.003px 0 0 95.5px;
+    background: url(https://static.codia.ai/image/2026-09-27/V1PUBVRywn.png) no-repeat center;
+    background-size: cover;
+    z-index: 140;
+}
+
+.flex-row-d {
+    position: relative;
+    width: 940px;
+    height: 62px;
+    margin: 18.997px 0 0 96px;
+    z-index: 152;
+}
+
+.rp-5d {
+    position: absolute;
+    height: 62px;
+    top: 0;
+    left: 415px;
+    color: #181210;
+    font-family: Anton, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 62px;
+    white-space: nowrap;
+    z-index: 149;
+    display: flex;
+    align-items: center;
+}
+
+.rectangle-5e {
+    position: absolute;
+    width: 293px;
+    height: 60px;
+    top: 1px;
+    left: 647px;
+    background: #27d670;
+    border: 1px solid #28d56b;
+    z-index: 152;
+    border-radius: 50px;
+}
+
+.whatsapp-fill {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 17px;
+    left: 22px;
+    background: url(https://static.codia.ai/image/2026-09-27/nUuJr1nWpB.png) no-repeat center;
+    background-size: cover;
+    z-index: 155;
+    overflow: hidden;
+}
+
+.order-via-whatsapp {
+    position: absolute;
+    width: 204px;
+    height: 14px;
+    top: 23px;
+    left: 66px;
+    color: #181210;
+    font-family: Anybody, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: 2.8px;
+    z-index: 157;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rectangle-5f {
+    position: absolute;
+    width: 142px;
+    height: 50px;
+    top: 6px;
+    left: 115px;
+    border: 1px solid rgba(24, 18, 16, 0.21);
+    z-index: 151;
+    border-radius: 50px;
+}
+
+.text-53 {
+    position: absolute;
+    width: 51px;
+    height: 29px;
+    top: 9px;
+    left: 44px;
+    color: #000;
+    font-family: Anton, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 156;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divider-short-filled {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 15px;
+    left: 17px;
+    background: url(https://static.codia.ai/image/2026-09-27/rZ3qGZS2Us.png) no-repeat center;
+    background-size: cover;
+    z-index: 153;
+    overflow: hidden;
+}
+
+.plus {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 15px;
+    left: 98px;
+    background: url(https://static.codia.ai/image/2026-09-27/ZMfJC68S7m.png) no-repeat center;
+    background-size: cover;
+    z-index: 154;
+    overflow: hidden;
+}
+
+.quantity {
+    position: absolute;
+    height: 14px;
+    top: 34px;
+    left: 0;
+    color: rgba(44, 41, 39, 0.5);
+    font-family: Anybody, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    white-space: nowrap;
+    letter-spacing: 2.8px;
+    z-index: 142;
+    display: flex;
+    align-items: center;
+}
+
+.total {
+    position: absolute;
+    height: 14px;
+    top: 34px;
+    left: 345px;
+    color: rgba(44, 41, 39, 0.5);
+    font-family: Anybody, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    white-space: nowrap;
+    letter-spacing: 2.8px;
+    z-index: 146;
+    display: flex;
+    align-items: center;
+}
+
+.order-details-whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 533px;
+    height: 20px;
+    margin: 25px 0 0 453px;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: Plus Jakarta Sans, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: 0.8px;
+    z-index: 128;
+}
+
+.flex-row-dbc {
+    position: relative;
+    width: 1130px;
+    height: 42px;
+    margin: 182px 0 0 155px;
+    z-index: 143;
+}
+
+.soul-bite-60 {
+    position: absolute;
+    width: 100px;
+    height: 42px;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-family: Anton, var(--default-font-family);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 42px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 22;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instagram {
+    position: absolute;
+    width: 106px;
+    height: 14px;
+    top: 21px;
+    left: 1024px;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Anybody, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: right;
+    white-space: nowrap;
+    letter-spacing: 2.8px;
+    z-index: 143;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.flex-row-d-61 {
+    position: relative;
+    width: 1131px;
+    height: 40px;
+    margin: 6px 0 0 154px;
+    z-index: 144;
+}
+
+.cravings {
+    position: absolute;
+    width: 299px;
+    height: 40px;
+    top: 0;
+    left: 0;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: Plus Jakarta Sans, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.16px;
+    letter-spacing: 0.8px;
+    z-index: 129;
+    display: flex;
+    align-items: center;
+}
+
+.whatsapp {
+    position: absolute;
+    width: 99px;
+    height: 14px;
+    top: 2px;
+    left: 1032px;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Anybody, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: right;
+    white-space: nowrap;
+    letter-spacing: 2.8px;
+    z-index: 144;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.order-now-62 {
+    position: relative;
+    width: 107px;
+    height: 14px;
+    margin: -9px 0 0 1178px;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Anybody, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: right;
+    white-space: nowrap;
+    letter-spacing: 2.8px;
+    z-index: 145;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.seoul-bite-63 {
+    display: block;
+    position: relative;
+    height: 90px;
+    margin: 95px 0 0 322px;
+    color: #272320;
+    font-family: Anton, var(--default-font-family);
+    font-size: 200px;
+    font-weight: 400;
+    line-height: 90px;
+    white-space: nowrap;
+    z-index: 63;
+}
+
+.line-64 {
+    position: relative;
+    width: 1132px;
+    height: 1px;
+    margin: 111.5px 0 0 153.5px;
+    background: url(https://static.codia.ai/image/2026-09-27/AKmoY8n5c5.png) no-repeat center;
+    background-size: cover;
+    z-index: 132;
+}
+
+.copyright {
+    display: block;
+    position: relative;
+    height: 20px;
+    margin: 39.5px 0 0 480px;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: Plus Jakarta Sans, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    white-space: nowrap;
+    letter-spacing: 0.8px;
+    z-index: 130;
+}
+
+.rectangle-65 {
+    position: absolute;
+    width: 1440px;
+    height: 1085px;
+    top: -37px;
+    left: 0;
+    background: url(https://static.codia.ai/image/2026-09-27/aNHBGmkYz9.png) no-repeat center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.rectangle-66 {
+    position: absolute;
+    width: 1531.635px;
+    height: 139.281px;
+    top: 909.178px;
+    left: -21.661px;
+    background: url(https://static.codia.ai/image/2026-09-27/wu8dNyKfra.png) no-repeat center;
+    background-size: cover;
+    z-index: 82;
+}
+
+.rectangle-67 {
+    position: absolute;
+    width: 1440px;
+    height: 815px;
+    top: 2158px;
+    left: 0;
+    background: url(https://static.codia.ai/image/2026-09-27/SwxdEHhrqg.png) no-repeat center;
+    background-size: cover;
+    z-index: 2;
+}
+
+.rectangle-68 {
+    position: absolute;
+    width: 1441px;
+    height: 1030px;
+    top: 4091px;
+    left: 50%;
+    background: url(https://static.codia.ai/image/2026-09-27/QGUwhatMfm.png) no-repeat center;
+    background-size: cover;
+    transform: translate(-50.03%, 0);
+    z-index: 3;
+}
+
+.image {
+    position: absolute;
+    width: 1444px;
+    height: 725px;
+    top: 5121px;
+    left: 50%;
+    background: url(https://static.codia.ai/image/2026-09-27/Y46bkjfLD0.png) no-repeat center;
+    background-size: cover;
+    transform: translate(-50%, 0);
+}
+
+.rectangle-69 {
+    position: absolute;
+    width: 1441px;
+    height: 1000px;
+    top: 5845px;
+    left: 50%;
+    background: url(https://static.codia.ai/image/2026-09-27/mneG3D3qfq.png) no-repeat center;
+    background-size: cover;
+    transform: translate(-50.03%, 0);
+    z-index: 4;
+}
+
+.rectangle-6a {
+    position: absolute;
+    width: 1441px;
+    height: 605px;
+    top: 6845px;
+    left: 50%;
+    background: url(https://static.codia.ai/image/2026-09-27/kHojZkvzaQ.png) no-repeat center;
+    background-size: cover;
+    transform: translate(-50.03%, 0);
+    z-index: 5;
+}
+
+/* ============================================================
+   STICKY NAV
+   ============================================================ */
+
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10000;
+    display: flex;
+    height: 72px;
+    align-items: center;
+    gap: 34px;
+    padding: 0 clamp(24px, 4vw, 72px);
+    background: rgba(25, 18, 16, 0.96);
+    color: #fff;
+    font-family: Syne, var(--default-font-family);
+    transition: height 0.4s ease, background 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.sticky-nav.is-scrolled {
+    height: 72px;
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+    background: rgba(25, 18, 16, 0.92);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.sticky-nav-brand {
+    flex: none;
+    color: #fff;
+    font-family: Anton, var(--default-font-family);
+    font-size: 28px;
+    line-height: 1;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.sticky-nav-links {
+    display: flex;
+    align-items: center;
+    gap: clamp(22px, 3vw, 44px);
+    margin-left: auto;
+}
+
+.sticky-nav-links a {
+    position: relative;
+    padding: 8px 0;
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sticky-nav-links a::after {
+    position: absolute;
+    right: 0;
+    bottom: 1px;
+    left: 0;
+    height: 2px;
+    background: #d32031;
+    content: "";
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.35s ease;
+}
+
+.sticky-nav-links a:hover {
+    color: #fff;
+}
+
+.sticky-nav-links a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.sticky-nav-order {
+    flex: none;
+    border-radius: 999px;
+    padding: 15px 27px;
+    background: #d32031;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sticky-nav-order:hover {
+    background: #ef3144;
+    box-shadow: 0 16px 26px -14px rgba(211, 32, 49, 0.9);
+    transform: translateY(-2px);
+}
+
+.sticky-nav-toggle {
+    display: none;
+    color: #fff;
+}
+
+.mobile-nav-order {
+    display: none;
+    color: #fff;
+}
+
+/* ============================================================
+   DESKTOP ANIMATIONS
+   ============================================================ */
+
+.flex-row-a {
+    visibility: visible;
+    animation: original-ticker-motion 10s ease-in-out infinite alternate;
+    will-change: transform;
+}
+
+.animated-ticker {
+    display: none;
+}
+
+@keyframes original-ticker-motion {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-120px);
+    }
+}
+
+.animated-ticker-track {
+    display: flex;
+    width: max-content;
+    height: 100%;
+    align-items: center;
+    gap: 0;
+    color: #f4ecde;
+    font-family: Anton, var(--default-font-family);
+    font-size: 28px;
+    letter-spacing: 1.4px;
+    line-height: 1;
+    white-space: nowrap;
+    animation: ticker-marquee 24s linear infinite;
+    will-change: transform;
+    transform: rotate(-0.5deg);
+}
+
+.animated-ticker-group {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex: none;
+    padding-right: 25px;
+}
+
+.animated-ticker-track b {
+    font-family: Syne, var(--default-font-family);
+    font-size: 15px;
+}
+
+@keyframes ticker-marquee {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.rectangle-5e,
+.plus,
+.divider-short-filled {
+    cursor: pointer;
+}
+
+.rectangle-5e {
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rectangle-5e:hover {
+    background: #1eb955;
+    box-shadow: 0 17px 28px -16px rgba(39, 214, 112, 0.9);
+    transform: translateY(-3px);
+}
+
+.rectangle-5e:active {
+    transform: translateY(-1px);
+}
+
+.plus,
+.divider-short-filled {
+    border-radius: 50%;
+    transition: transform 0.2s ease, background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.plus:hover,
+.divider-short-filled:hover {
+    background-color: rgba(24, 18, 16, 0.08);
+    transform: scale(1.15);
+}
+
+.divider-short-filled.is-disabled {
+    cursor: not-allowed;
+    opacity: 0.35;
+}
+
+/* ============================================================
+   INTERACTION FIXES
+   ============================================================ */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 96px;
+}
+
+.main-container {
+    padding-top: 90px;
+}
+
+.sticky-nav a {
+    text-decoration: none;
+}
+
+.sticky-nav-brand,
+.sticky-nav-links a,
+.sticky-nav-order,
+.rectangle-5,
+.rectangle-5e,
+.plus,
+.divider-short-filled,
+.instagram,
+.whatsapp,
+.order-now-62 {
+    cursor: pointer;
+}
+
+.sticky-nav-links a:focus-visible,
+.sticky-nav-order:focus-visible,
+.sticky-nav-brand:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 5px;
+    border-radius: 6px;
+}
+
+.rectangle-5,
+.instagram,
+.whatsapp,
+.order-now-62 {
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.rectangle-5:hover,
+.instagram:hover,
+.whatsapp:hover,
+.order-now-62:hover {
+    transform: translateY(-3px);
+    opacity: 0.82;
+}
+
+/* ============================================================
+   ANIMATION PACK
+   ============================================================ */
+
+.sb-reveal {
+    opacity: 0;
+    transition: opacity 0.55s ease-out;
+    will-change: opacity;
+}
+
+.sb-reveal.sb-in {
+    opacity: 1;
+}
+
+.sb-reveal.sb-delay-1 {
+    transition-delay: 0.08s;
+}
+
+.sb-reveal.sb-delay-2 {
+    transition-delay: 0.16s;
+}
+
+.sb-reveal.sb-delay-3 {
+    transition-delay: 0.24s;
+}
+
+.sb-reveal.sb-delay-4 {
+    transition-delay: 0.32s;
+}
+
+.sb-image-motion {
+    background-size: 100% auto !important;
+    transition: background-size 1.25s cubic-bezier(0.22, 1, 0.36, 1), filter 0.45s ease;
+    will-change: background-size;
+}
+
+.sb-image-motion:hover {
+    background-size: 108% auto !important;
+    filter: saturate(1.08) contrast(1.03);
+}
+
+.rectangle-5,
+.rectangle-5e,
+.sticky-nav-order,
+.order-now-62,
+.instagram,
+.whatsapp,
+.plus,
+.divider-short-filled {
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease, filter 0.35s ease, opacity 0.35s ease;
+    will-change: transform;
+}
+
+.rectangle-5:hover,
+.rectangle-5e:hover,
+.sticky-nav-order:hover,
+.order-now-62:hover,
+.instagram:hover,
+.whatsapp:hover {
+    transform: translateY(-4px) scale(1.025);
+    filter: brightness(1.08);
+}
+
+.rectangle-5:active,
+.rectangle-5e:active,
+.sticky-nav-order:active,
+.order-now-62:active {
+    transform: translateY(-1px) scale(0.985);
+}
+
+.plus:hover,
+.divider-short-filled:hover {
+    transform: scale(1.18) rotate(4deg);
+}
+
+.star,
+.star-b,
+.star-c,
+.star-e,
+.star-10,
+.star-11,
+.star-12,
+.star-13,
+.star-17,
+.star-18,
+.star-22,
+.star-36,
+.star-4c,
+.star-56 {
+    animation: sbPulse 2.6s ease-in-out infinite;
+    transform-origin: center;
+}
+
+.star-b,
+.star-11,
+.star-18,
+.star-36,
+.star-56 {
+    animation-delay: 0.35s;
+}
+
+.star-c,
+.star-12,
+.star-17,
+.star-4c {
+    animation-delay: 0.7s;
+}
+
+@keyframes sbPulse {
+
+    0%,
+    100% {
+        opacity: 0.72;
+    }
+
+    50% {
+        opacity: 1;
+        filter: brightness(1.25);
+    }
+}
+
+.rectangle-42,
+.rectangle-43,
+.rectangle-44,
+.rectangle-45,
+.rectangle-1c,
+.rectangle-1e,
+.rectangle-20 {
+    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.5s ease, filter 0.5s ease;
+}
+
+.rectangle-42:hover,
+.rectangle-43:hover,
+.rectangle-44:hover,
+.rectangle-45:hover,
+.rectangle-1c:hover,
+.rectangle-1e:hover,
+.rectangle-20:hover {
+    transform: translateY(-8px);
+    filter: brightness(1.04);
+    box-shadow: 0 18px 35px rgba(24, 18, 16, 0.16);
+}
+
+.sticky-nav-links a {
+    position: relative;
+}
+
+.sticky-nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 100%;
+    bottom: -7px;
+    height: 2px;
+    background: #d32031;
+    transition: right 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.sticky-nav-links a:hover::after,
+.sticky-nav-links a:focus-visible::after {
+    right: 0;
+}
+
+.animated-ticker,
+.flex-row-a {
+    overflow: hidden;
+}
+
+.animated-ticker-track {
+    will-change: transform;
+}
+
+/* ============================================================
+   MOBILE LAYOUT
+   ============================================================ */
+
+.mobile-layout {
+    display: none;
+}
+
+@media (max-width: 760px) {
+
+    html,
+    body {
+        background: #191210;
+    }
+
+    .canvas-frame {
+        display: none !important;
+    }
+
+    .mobile-layout {
+        display: block;
+        background: #191210;
+        color: #f4ecde;
+        font-family: "Plus Jakarta Sans", var(--default-font-family);
+        padding-top: 64px;
+        overflow-x: hidden;
+        scroll-margin-top: 64px;
+    }
+
+    .m-section {
+        scroll-margin-top: 64px;
+    }
+
+    /* ============ NAV ============ */
+    .sticky-nav {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        height: 64px;
+        padding: 0 16px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .sticky-nav.is-scrolled {
+        height: 64px;
+    }
+
+    .sticky-nav-brand {
+        order: 1;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: "Anton", var(--default-font-family);
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        color: #fff;
+    }
+
+
+    /* --- Mobile nav: logo lebih kecil --- */
+    @media (max-width: 760px) {
+        .sticky-nav-brand .sb-logo {
+            width: 30px;
+            height: 30px;
+        }
+
+        /* Mobile footer: logo menggantikan lingkaran merah */
+        .m-footer-logo-mark {
+            width: 40px !important;
+            height: 40px !important;
+            padding: 0 !important;
+            background: transparent !important;
+            border-radius: 0 !important;
+            overflow: visible !important;
+        }
+
+        .m-footer-logo-mark .sb-logo {
+            width: 40px;
+            height: 40px;
+            display: block;
+        }
+    }
+
+    /* ============================================================
+           LOGO BULAT SOUL BITE — minimal, bulletproof
+           ============================================================ */
+
+    .sb-logo {
+        display: inline-block !important;
+        width: 40px !important;
+        height: 40px !important;
+        min-width: 40px !important;
+        background-color: #d32031 !important;
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='50' y='68' font-family='Arial Black, Arial, sans-serif' font-size='48' font-weight='900' fill='white' text-anchor='middle'%3ESB%3C/text%3E%3C/svg%3E") !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        background-size: 55% auto !important;
+        border-radius: 50% !important;
+        flex-shrink: 0 !important;
+        vertical-align: middle !important;
+    }
+
+    /* Nav: brand jadi flex supaya logo + teks sejajar */
+    .sticky-nav-brand {
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 12px !important;
+    }
+
+    /* Footer desktop: elemen SOUL BITE besar di atas INSTAGRAM */
+    .soul-bite-60 {
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 12px !important;
+        width: auto !important;
+        padding-right: 16px !important;
+    }
+
+    /* ============ Hamburger toggle ============ */
+    .sticky-nav-toggle {
+        order: 3;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        position: static;
+        width: 36px;
+        height: 36px;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        color: #fff !important;
+        font-size: 0;
+        cursor: pointer;
+        flex-shrink: 0;
+        z-index: 100001;
+    }
+
+    .sticky-nav-toggle::before {
+        content: "☰";
+        display: block;
+        color: #fff !important;
+        font-size: 26px;
+        line-height: 1;
+        -webkit-text-fill-color: #fff !important;
+    }
+
+    .sticky-nav.is-menu-open .sticky-nav-toggle::before {
+        content: "×";
+        font-size: 30px;
+    }
+
+    /* ============ Dropdown menu ============ */
+    .sticky-nav-links {
+        order: 4;
+        display: flex !important;
+        position: absolute;
+        top: 64px;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        margin: 0;
+        padding: 8px 16px 16px;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(25, 18, 16, 0.98);
+        box-shadow: 0 16px 24px rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-8px);
+        transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .sticky-nav.is-menu-open .sticky-nav-links {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    .sticky-nav-links a {
+        padding: 14px 0;
+        font-family: "Syne", var(--default-font-family);
+        font-size: 13px;
+        font-weight: 600;
+        color: #f4ecde;
+        text-decoration: none;
+    }
+
+    .sticky-nav-links .mobile-nav-order {
+        display: block;
+        margin-top: 8px;
+        border-radius: 999px;
+        padding: 13px 16px;
+        background: #d32031;
+        color: #fff;
+        text-align: center;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+    }
+
+    /* ============ HERO ============ */
+    .m-hero {
+        padding: 28px 20px 0;
+        background: #191210;
+        color: #f4ecde;
+    }
+
+    .m-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-family: "Syne", var(--default-font-family);
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    .m-eyebrow::before {
+        content: "◆";
+        color: #d32031;
+        font-size: 8px;
+        line-height: 1;
+    }
+
+    .m-eyebrow-light {
+        color: #f4ecde;
+    }
+
+    .m-eyebrow-red {
+        color: #ffffff;
+    }
+
+    .m-hero-title {
+        font-family: "Anton", var(--default-font-family);
+        font-size: 52px;
+        line-height: 0.98;
+        letter-spacing: 0.5px;
+        margin: 18px 0 22px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .m-hero-line {
+        display: block;
+    }
+
+    .m-hero-light {
+        color: #f4ecde;
+    }
+
+    .m-hero-outline {
+        color: transparent;
+        -webkit-text-stroke: 2.5px #d32031;
+    }
+
+    .m-hero-desc {
+        font-size: 15px;
+        line-height: 1.55;
+        color: #f4ecde;
+        opacity: 0.8;
+        margin: 0 0 26px;
+        max-width: 320px;
+    }
+
+    .m-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 999px;
+        padding: 14px 30px;
+        font-family: "Syne", var(--default-font-family);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: transform 0.25s ease, filter 0.25s ease;
+        cursor: pointer;
+    }
+
+    .m-btn-primary {
+        background: #d32031;
+        color: #fff;
+    }
+
+    .m-btn-primary:active {
+        transform: scale(0.97);
+    }
+
+    .m-link {
+        display: inline-block;
+        margin-top: 26px;
+        color: #f4ecde;
+        font-family: "Syne", var(--default-font-family);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 2.5px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .m-hero-visual {
+        width: calc(100% + 40px);
+        margin: 32px -20px 0;
+        height: 380px;
+        background: url(https://static.codia.ai/image/2026-09-27/rP46tco1yq.png) no-repeat center;
+        background-size: cover;
+        border-radius: 220px 220px 0 0;
+    }
+
+    /* ============ TICKER ============ */
+    .m-ticker {
+        background: #d32031;
+        overflow: hidden;
+        padding: 14px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .m-ticker-track {
+        display: flex;
+        width: max-content;
+        animation: m-ticker-scroll 22s linear infinite;
+        white-space: nowrap;
+    }
+
+    .m-ticker-group {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding-right: 20px;
+        font-family: "Anton", var(--default-font-family);
+        font-size: 20px;
+        color: #ffffff;
+        letter-spacing: 1px;
+    }
+
+    .m-ticker-group b {
+        font-family: "Syne", var(--default-font-family);
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    @keyframes m-ticker-scroll {
+        to {
+            transform: translateX(-50%);
+        }
+    }
+
+    /* ============ SECTIONS (shared) ============ */
+    .m-section {
+        padding: 56px 20px;
+    }
+
+    .m-section-cream {
+        background: #f4ecde;
+        color: #181210;
+    }
+
+    .m-section-dark {
+        background: #191210;
+        color: #f4ecde;
+    }
+
+    .m-title {
+        font-family: "Anton", var(--default-font-family);
+        font-size: 40px;
+        line-height: 1;
+        letter-spacing: 0.5px;
+        margin: 16px 0 24px;
+        font-weight: 400;
+    }
+
+    .m-title-red {
+        color: #d32031;
+    }
+
+    .m-title-light {
+        color: #f4ecde;
+    }
+
+    .m-body {
+        font-size: 15px;
+        line-height: 1.55;
+        margin: 0 0 24px;
+        color: #181210;
+        opacity: 0.85;
+    }
+
+    .m-body-light {
+        color: #f4ecde;
+        opacity: 0.85;
+    }
+
+    .m-label-light {
+        display: block;
+        font-family: "Syne", var(--default-font-family);
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 2.5px;
+        color: #f4ecde;
+        opacity: 0.65;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+    }
+
+    .m-label-dark {
+        display: block;
+        font-family: "Syne", var(--default-font-family);
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 2.5px;
+        color: #181210;
+        opacity: 0.6;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+    }
+
+    .m-price {
+        display: block;
+        font-family: "Anton", var(--default-font-family);
+        font-size: 40px;
+        line-height: 1;
+        color: #d32031;
+        letter-spacing: 0.5px;
+    }
+
+    /* ============ PRODUCT ============ */
+    .m-product-card {
+        position: relative;
+        margin-bottom: 26px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .m-product-img {
+        width: 100%;
+        height: 380px;
+        background: url(https://static.codia.ai/image/2026-09-27/2xp80iXcS6.png) no-repeat center;
+        background-size: cover;
+        border-radius: 20px;
+    }
+
+    .m-badge {
+        position: absolute;
+        background: rgba(244, 236, 222, 0.96);
+        color: #181210;
+        padding: 10px 14px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+        max-width: 150px;
+    }
+
+    .m-badge strong {
+        font-family: "Syne", var(--default-font-family);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 1.2px;
+    }
+
+    .m-badge small {
+        font-size: 10px;
+        line-height: 1.3;
+        opacity: 0.7;
+    }
+
+    .m-badge-1 {
+        top: 16px;
+        right: 16px;
+    }
+
+    .m-badge-2 {
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        border-radius: 0 8px 8px 0;
+    }
+
+    .m-badge-3 {
+        bottom: 16px;
+        right: 16px;
+    }
+
+    .m-features {
+        list-style: none;
+        padding: 0;
+        margin: 24px 0 26px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .m-features li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: "Syne", var(--default-font-family);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 2.5px;
+        color: #181210;
+        text-transform: uppercase;
+    }
+
+    .m-features li::before {
+        content: "◆";
+        color: #d32031;
+        font-size: 8px;
+        line-height: 1;
+    }
+
+    .m-product-img-secondary {
+        width: 100%;
+        height: 240px;
+        border-radius: 20px;
+        background: url(https://static.codia.ai/image/2026-09-27/i0uvPeLdYh.png) no-repeat center;
+        background-size: cover;
+    }
+
+    /* ============ SIGNATURE (FIXED) ============ */
+    .m-signature .m-eyebrow-light {
+        color: #f4ecde;
+    }
+
+    .m-signature-img {
+        width: 100%;
+        height: 320px;
+        border-radius: 20px;
+        background: url(https://static.codia.ai/image/2026-09-27/Njdu25YgpW.png) no-repeat center;
+        background-size: cover;
+        margin-bottom: 28px;
+    }
+
+    .m-pills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 30px;
+    }
+
+    .m-pill {
+        border: 1px solid rgba(244, 236, 222, 0.35);
+        border-radius: 999px;
+        padding: 10px 16px;
+        font-family: "Syne", var(--default-font-family);
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #f4ecde;
+        text-transform: uppercase;
+    }
+
+    .m-pill::before {
+        content: "◆ ";
+        color: #d32031;
+        font-size: 8px;
+    }
+
+    .m-signature-price {
+        padding-top: 24px;
+        border-top: 1px solid rgba(244, 236, 222, 0.18);
+        margin-top: 26px;
+    }
+
+    .m-signature-price .m-label-light {
+        margin-bottom: 10px;
+    }
+
+    .m-price-light {
+        display: block;
+        font-family: "Anton", var(--default-font-family);
+        font-size: 44px;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: 0.5px;
+        color: #f4ecde;
+        margin-top: 2px;
+    }
+
+    /* ============ FLAVOR ============ */
+    .m-flavor-list {
+        list-style: none;
+        padding: 0;
+        margin: 32px 0 0;
+    }
+
+    .m-flavor-list li {
+        display: grid;
+        grid-template-columns: 44px 1fr;
+        gap: 12px;
+        padding: 22px 0;
+        border-bottom: 1px solid rgba(24, 18, 16, 0.12);
+    }
+
+    .m-flavor-list li:first-child {
+        padding-top: 8px;
+    }
+
+    .m-flavor-list li:last-child {
+        border-bottom: none;
+    }
+
+    .m-flavor-num {
+        font-family: "Syne", var(--default-font-family);
+        font-size: 11px;
+        font-weight: 700;
+        color: #181210;
+        letter-spacing: 3px;
+        padding-top: 8px;
+        opacity: 0.55;
+    }
+
+    .m-flavor-title {
+        font-family: "Anton", var(--default-font-family);
+        font-size: 28px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin: 0 0 8px;
+        color: #181210;
+    }
+
+    .m-flavor-desc {
+        font-size: 13px;
+        line-height: 1.55;
+        margin: 0;
+        color: #181210;
+        opacity: 0.7;
+    }
+
+    /* ============ PROCESS ============ */
+    .m-mt-2 {
+        margin-top: 4px;
+    }
+
+    .m-steps {
+        margin-top: 34px;
+        display: flex;
+        flex-direction: column;
+        gap: 44px;
+    }
+
+    .m-step {
+        position: relative;
+    }
+
+    .m-step-num {
+        display: block;
+        font-family: "Anton", var(--default-font-family);
+        font-size: 36px;
+        color: #d32031;
+        letter-spacing: 1px;
+        margin-bottom: 14px;
+        line-height: 1;
+    }
+
+    .m-step-img {
+        width: 100%;
+        height: 280px;
+        border-radius: 20px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .m-step-img-1 {
+        background-image: url(https://static.codia.ai/image/2026-09-27/MRAk5NRJcY.png);
+    }
+
+    .m-step-img-2 {
+        background-image: url(https://static.codia.ai/image/2026-09-27/VKpYzoDPhh.png);
+    }
+
+    .m-step-img-3 {
+        background-image: url(https://static.codia.ai/image/2026-09-27/SLHuRfJoZg.png);
+    }
+
+    .m-step-img-4 {
+        background-image: url(https://static.codia.ai/image/2026-09-27/fXGNVcA3ag.png);
+    }
+
+    .m-step-title {
+        font-family: "Anton", var(--default-font-family);
+        font-size: 24px;
+        font-weight: 400;
+        margin: 16px 0 8px;
+        color: #f4ecde;
+        letter-spacing: 1px;
+    }
+
+    .m-step-desc {
+        font-size: 13px;
+        line-height: 1.55;
+        color: #f4ecde;
+        opacity: 0.7;
+        margin: 0;
+    }
+
+    /* ============ BRAND ============ */
+    .m-section-brand {
+        background:
+            linear-gradient(rgba(25, 18, 16, 0.82), rgba(25, 18, 16, 0.9)),
+            url(https://static.codia.ai/image/2026-09-27/Y46bkjfLD0.png) no-repeat center;
+        background-size: cover;
+        color: #f4ecde;
+        padding: 80px 20px;
+    }
+
+    .m-brand-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px 26px;
+        margin-top: 30px;
+        padding-top: 22px;
+        border-top: 1px solid rgba(244, 236, 222, 0.18);
+        font-family: "Syne", var(--default-font-family);
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 2.4px;
+        color: #f4ecde;
+        text-transform: uppercase;
+    }
+
+    /* ============ ORDER ============ */
+    .m-order-card {
+        background: #f4ecde;
+        color: #181210;
+        border-radius: 24px;
+        padding: 18px;
+        margin-top: 30px;
+    }
+
+    .m-order-img {
+        width: 100%;
+        height: 180px;
+        border-radius: 16px;
+        background: url(https://static.codia.ai/image/2026-09-27/aQW8OWY0cj.png) no-repeat center;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+
+    .m-order-label {
+        display: block;
+        font-family: "Syne", var(--default-font-family);
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 2.5px;
+        color: #181210;
+        opacity: 0.6;
+        margin-bottom: 6px;
+        text-transform: uppercase;
+    }
+
+    .m-order-name {
+        font-family: "Anton", var(--default-font-family);
+        font-size: 22px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin: 0 0 20px;
+        color: #181210;
+        text-transform: uppercase;
+    }
+
+    .m-order-price {
+        font-family: "Anton", var(--default-font-family);
+        font-size: 32px;
+        color: #d32031;
+        letter-spacing: 0.5px;
+        margin-bottom: 24px;
+        line-height: 1;
+    }
+
+    .m-order-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 20px 0;
+        border-top: 1px solid rgba(24, 18, 16, 0.12);
+        margin-bottom: 20px;
+    }
+
+    .m-order-cell {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .m-order-cell-right {
+        align-items: flex-end;
+        text-align: right;
+    }
+
+    .m-qty {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        border: 1px solid rgba(24, 18, 16, 0.2);
+        border-radius: 999px;
+        padding: 4px;
+    }
+
+    .m-qty-btn {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: 0;
+        background: transparent;
+        color: #181210;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: inherit;
+    }
+
+    .m-qty-btn.is-disabled {
+        opacity: 0.3;
+        cursor: not-allowed;
+    }
+
+    .m-qty-value {
+        font-family: "Anton", var(--default-font-family);
+        font-size: 16px;
+        min-width: 22px;
+        text-align: center;
+        letter-spacing: 0.5px;
+    }
+
+    .m-order-total {
+        font-family: "Anton", var(--default-font-family);
+        font-size: 22px;
+        color: #181210;
+        letter-spacing: 0.5px;
+    }
+
+    .m-wa-btn {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background: #27d670;
+        color: #181210;
+        font-family: "Anybody", var(--default-font-family);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2.5px;
+        border: 0;
+        border-radius: 999px;
+        padding: 16px 18px;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: filter 0.2s ease, transform 0.2s ease;
+    }
+
+    .m-wa-btn:active {
+        transform: scale(0.98);
+    }
+
+    .m-wa-icon {
+        display: inline-flex;
+    }
+
+    .m-order-note {
+        text-align: center;
+        font-size: 10px;
+        line-height: 1.5;
+        color: #f4ecde;
+        opacity: 0.7;
+        margin: 20px 0 0;
+    }
+
+    /* ============ FOOTER ============ */
+    .m-footer {
+        background: #191210;
+        color: #f4ecde;
+        padding: 56px 20px 32px;
+        overflow: hidden;
+
+    }
+
+    .m-footer-brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 18px;
+    }
+
+    .m-footer-logo-mark {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background: #d32031;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Anton", var(--default-font-family);
+        font-size: 10px;
+        letter-spacing: 0;
+        flex-shrink: 0;
+    }
+
+    .m-footer-brand span {
+        font-family: "Anton", var(--default-font-family);
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .m-footer-desc {
+        margin-bottom: 28px;
+        max-width: 260px;
+    }
+
+    .m-footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+
+    .m-footer-links a {
+        color: #f4ecde;
+        text-decoration: none;
+        font-family: "Anybody", var(--default-font-family);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        opacity: 0.7;
+        text-transform: uppercase;
+    }
+
+    .m-footer-watermark {
+        font-family: "Anton", var(--default-font-family);
+        font-size: 64px;
+        line-height: 1;
+        color: #f4ecde;
+        opacity: 0.07;
+        letter-spacing: 2px;
+        text-align: center;
+        margin: 32px -20px 28px;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .m-footer-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(244, 236, 222, 0.1);
+        font-size: 11px;
+        opacity: 0.65;
+        letter-spacing: 0.5px;
+    }
+
+    .m-footer-korean {
+        font-family: "Anton", var(--default-font-family);
+        letter-spacing: 1px;
+    }
+}
+
+/* ============================================================
+   FIX: Mobile — hide Order Now di luar toggle, sisakan hamburger saja
+   ============================================================ */
+@media (max-width: 760px) {
+    .sticky-nav-order {
+        display: none !important;
+    }
+
+    .sticky-nav-toggle {
+        margin-left: auto;
+        /* dorong hamburger ke kanan */
+    }
+}
+
+/* Ganti semua garis dari URL image jadi solid color */
+.line,
+.line-24,
+.line-28,
+.line-2d,
+.line-30,
+.line-34,
+.line-4f,
+.line-5c,
+.line-64,
+.line-3d,
+.line-3e,
+.line-3f,
+.line-40,
+.line-50,
+.line-51 {
+    background-image: none !important;
+    background-color: rgba(24, 18, 16, 0.2);
+}
+
+/* Garis di section gelap → warna terang */
+.line-4f,
+.line-64,
+.line-3d,
+.line-3e,
+.line-3f,
+.line-40,
+.line-50,
+.line-51 {
+    background-color: rgba(244, 236, 222, 0.35);
+}
+
+
+/* ============================================================
+   REDUCED MOTION
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+
+    .sb-reveal {
+        opacity: 1 !important;
+        filter: none !important;
+        clip-path: none !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
+    .sb-image-motion,
+    .rectangle-5,
+    .rectangle-5e,
+    .sticky-nav-order,
+    .order-now-62,
+    .instagram,
+    .whatsapp,
+    .plus,
+    .divider-short-filled,
+    .rectangle-42,
+    .rectangle-43,
+    .rectangle-44,
+    .rectangle-45,
+    .rectangle-1c,
+    .rectangle-1e,
+    .rectangle-20 {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* ============================================================
+   LOGO BULAT SOUL BITE — berlaku untuk DESKTOP + MOBILE
+   =============================================<div class="m-footer-logo-mark">
+  <span class="sb-logo" aria-hidden="true"></span>
+</div>=============== */
+
+/* === Logo dasar === */
+.sb-logo {
+    display: inline-block !important;
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px !important;
+    background-color: transparent !important;
+    background-image: url("image.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    border-radius: 50% !important;
+    flex-shrink: 0 !important;
+    vertical-align: middle !important;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* === Nav (desktop + mobile): brand jadi flex === */
+.sticky-nav-brand {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    text-decoration: none;
+}
+
+/* === Footer desktop: SOUL BITE + logo jadi flex === */
+.soul-bite-60 {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 10px !important;
+    width: auto !important;
+    padding-right: 12px !important;
+}
+
+/* === Ukuran khusus mobile === */
+@media (max-width: 760px) {
+    .sticky-nav-brand .sb-logo {
+        width: 30px !important;
+        height: 30px !important;
+        min-width: 30px !important;
+    }
+
+    .m-footer-logo-mark {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 40px !important;
+        height: 40px !important;
+        padding: 0 !important;
+        background: transparent !important;
+        border-radius: 0 !important;
+        font-size: 0 !important;
+        color: transparent !important;
+        overflow: visible !important;
+    }
+
+    .m-footer-logo-mark .sb-logo {
+        width: 40px !important;
+        height: 40px !important;
+        min-width: 40px !important;
+    }
+}
